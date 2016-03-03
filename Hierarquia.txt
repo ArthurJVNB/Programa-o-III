@@ -1,0 +1,53 @@
+Objeto
+
+	Personagem	-Jogador
+			-NPC		->Essencial (nunca morre)
+
+	Cenário		-Parede
+			-Porta		->Trancada
+			-Janela
+			-Luz
+			-Planta		->Planta menor
+
+	Item		-Arma		->Projétil
+			-Escudo
+
+
+---------------------------------------
+
+
+Personagem: Vida, Mana, Força, Defesa, Level, Área de colisão (cápsula)
+
+	Jogador: Controlador, Câmera
+
+	NPC: 
+		Essencial: Nunca morrer (recupera a vida depois de certo tempo "morto")
+
+
+---------------------------------------
+
+
+Cenário:
+
+	Parede: Área de colisão (paralelepípedo)
+
+	Porta: Ação de abrir/fechas
+		Trancada: chave
+
+	Janela: Semitransparencia
+
+	Luz: Emite luz
+
+	Planta: EhBalancavelComVento (bool)
+		Planta menor: EhInteragivel (bool)
+
+
+---------------------------------------
+
+
+Item: Objeto que pode ficar no inventário do jogador
+
+	Arma: Valor acima de zero em dano, Pode provocar dano em outro personagem, Área de colisão
+		Projétil: Lança projétil que provoca dano em outro personagem, Área de colisão
+
+	Escudo: valor de defesa de dano, Área de colisão

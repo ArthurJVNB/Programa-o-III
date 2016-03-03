@@ -1,0 +1,27 @@
+DEFINIR O OBJETO ITEM PARA UM JOGO DE RPG
+
+CARACTERÍSTICAS
+
+-Peso/Espaço que ocupa no inventário
+-Tipo do objeto
+-Os status que afeta (HP, etc.)
+-Quais melhoras e/ou pioras de status
+-Tempo de executar a ação para o tipo de objeto
+-"Cooldown" para ser usado de novo
+-Como são colocadas as melhorias:
+   -Manter equipado (se coloca no personagem)
+   -Usar e ter um tempo de efeito ou ser permanente
+-Consome ou não?
+-Alcance de efeito
+-Nome
+-Descrição
+
+
+
+AÇÕES (Dica: Pense em verbos)
+
+-Interagir com o dono e/ou outros personagens
+ Ex.:
+     -Consumir e afetar player ou npc (tipo: poções)
+     -Atacar ou defender (tipo: arma)
+-Descartar
